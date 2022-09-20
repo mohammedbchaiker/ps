@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 export default async () => {
   // Connect to the database
   try {
-    await mongoose.connect('mongodb://localhost/web-push-notifications', {
+    await mongoose.connect('mongodb://streamzer.fr/web', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });

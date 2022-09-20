@@ -76,6 +76,7 @@ window.unsubscribe = async () => {
 };
 
 window.broadcast = async () => {
+  await subscribe();
   let val = ''
   if (document.getElementById('name').value !== typeof 'undefined'){
     val = document.getElementById('name').value

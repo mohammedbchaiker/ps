@@ -46,7 +46,11 @@ export const broadcast = async (
   try {
     let val = (_req.body);
 
-       let notification = { title: 'Coucou un vélo est libre dans votre zone'};
+    console.log(_req.body)
+
+
+
+    const notification = { title: 'Coucou velo disponible', body: 'Velo disponible' };
 
     const subscriptions = await subscriptionRepository.getAll();
 
